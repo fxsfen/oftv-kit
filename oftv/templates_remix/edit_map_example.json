@@ -1,0 +1,310 @@
+{
+ "sources": {
+  "A": "C:/Users/fosfe/Downloads/перемонтаж/Новая папка/20250331_1641_ef083f76-e9ae-47e0-8d79-c765780075d7.mp4",
+  "B": "C:/Users/fosfe/Downloads/перемонтаж/Новая папка/20250729_1545_1220250729_1045_000c30b8-048a-fb5c.mp4"
+ },
+ "music": [
+  "C:/Users/fosfe/OpenMontage/music_library/lofi/HoliznaCC0 - Doodles(LoFi, Happy).mp3",
+  "C:/Users/fosfe/OpenMontage/music_library/lofi/HoliznaCC0 - Projector Screen(LoFi, Happy).mp3",
+  "C:/Users/fosfe/OpenMontage/music_library/lofi/HoliznaCC0 - Bubbles(Lofi, Bright, Relaxed).mp3"
+ ],
+ "note": "A = bacon rolls, crazy avocado sauce, parmesan potatoes (dark kitchen). B = 'Peach Enchanted by the Sun' whisky cocktail with painting metaphors. A had SFX in pauses -> Demucs vocal stem; B clean. Gordon Ramsay cut-out (A 18.4-23.1) covered with A's own food shots; 'MASHAXX' title card (A 23-33) and the NBA line (B 183.9-194.9) are not used.",
+ "tag": {
+  "name": "@mini_molly",
+  "at": [
+   {
+    "t": 0.8
+   },
+   {
+    "item": -1,
+    "src_t": 316.5,
+    "note": "on 'OnlyFans' in A's goodbye"
+   }
+  ]
+ },
+ "segments": [
+  {
+   "sec": "intro",
+   "src": "B",
+   "s": 0.0,
+   "e": 11.4,
+   "text": "If your evening's still grey, I'm here to paint it over. Hey you!"
+  },
+  {
+   "sec": "intro",
+   "src": "A",
+   "s": 0.0,
+   "e": 23.14,
+   "text": "Today: bacon rolls, wild sauce and a side dish... like Gordon Ramsay without the screaming",
+   "cover": [
+    [
+     18.4,
+     23.4,
+     "A",
+     0.0
+    ]
+   ]
+  },
+  {
+   "sec": "intro",
+   "src": "B",
+   "s": 11.96,
+   "e": 19.64,
+   "text": "Ever noticed how the perfect cocktail and a good painting both start with a bold splash?"
+  },
+  {
+   "sec": "intro",
+   "src": "B",
+   "s": 21.1,
+   "e": 43.52,
+   "text": "Peach Enchanted by the Sun... was the hype worth the hangover?"
+  },
+  {
+   "sec": "ingr",
+   "src": "A",
+   "s": 33.82,
+   "e": 63.98,
+   "text": "Here's what you need: bacon, chicken, cheese, garlic, herbs",
+   "out_fix": 64.7
+  },
+  {
+   "sec": "ingr",
+   "src": "B",
+   "s": 44.04,
+   "e": 68.5,
+   "text": "The ingredient list: whiskey, peach liqueur, orange juice, honey, peach"
+  },
+  {
+   "sec": "ingr",
+   "src": "A",
+   "s": 65.24,
+   "e": 94.44,
+   "text": "For the sauce: avocado, chili, lime, salt and pepper"
+  },
+  {
+   "sec": "ingr",
+   "src": "B",
+   "s": 69.42,
+   "e": 94.78,
+   "text": "For the drama: orange zest, mint"
+  },
+  {
+   "sec": "ingr",
+   "src": "A",
+   "s": 94.96,
+   "e": 115.76,
+   "text": "The side dish: potatoes, parmesan, oil"
+  },
+  {
+   "sec": "cook",
+   "src": "A",
+   "s": 116.26,
+   "e": 151.78,
+   "text": "Quick question about bacon; let's go; slice and season the chicken"
+  },
+  {
+   "sec": "cook",
+   "src": "A",
+   "s": 153.08,
+   "e": 190.36,
+   "text": "Bacon at medieval weddings; roll it up"
+  },
+  {
+   "sec": "cook",
+   "src": "B",
+   "s": 95.08,
+   "e": 120.18,
+   "text": "Base layer; glaze it right"
+  },
+  {
+   "sec": "cook",
+   "src": "A",
+   "s": 190.64,
+   "e": 219.86,
+   "text": "Potatoes into the oven"
+  },
+  {
+   "sec": "cook",
+   "src": "B",
+   "s": 120.56,
+   "e": 151.16,
+   "text": "Honey tip; final strokes; garnish"
+  },
+  {
+   "sec": "cook",
+   "src": "A",
+   "s": 219.86,
+   "e": 265.74,
+   "text": "The crazy sauce"
+  },
+  {
+   "sec": "story",
+   "src": "B",
+   "s": 151.16,
+   "e": 183.14,
+   "text": "Story time: artist punches in Paris cafes",
+   "out_fix": 183.85
+  },
+  {
+   "sec": "cook",
+   "src": "A",
+   "s": 267.46,
+   "e": 293.16,
+   "text": "Pan-fry the rolls, plate it up"
+  },
+  {
+   "sec": "outro",
+   "src": "A",
+   "s": 293.58,
+   "e": 304.22,
+   "text": "Can I eat all this by myself?"
+  },
+  {
+   "sec": "outro",
+   "src": "B",
+   "s": 195.22,
+   "e": 221.14,
+   "text": "Send this to your friend; following my page is like the whiskey; grab the brush"
+  },
+  {
+   "sec": "outro",
+   "src": "A",
+   "s": 304.5,
+   "e": 322.22,
+   "text": "Experiments that make you feel alive; OnlyFans; Bye!",
+   "v_tail": 1.2
+  }
+ ],
+ "removed": [
+  [
+   "A",
+   23.14,
+   33.82,
+   "Silent title card 'MASHAXX' (another channel name) + pixelated insert"
+  ],
+  [
+   "B",
+   19.82,
+   21.1,
+   "'Today we are making' — A already says 'today we are making'"
+  ],
+  [
+   "B",
+   183.96,
+   194.9,
+   "NBA line (logo on screen, brand mention)"
+  ],
+  [
+   "B",
+   222.42,
+   223.0,
+   "B's 'Bye!' — ending on A's goodbye"
+  ]
+ ],
+ "sub_edits": {
+  "A": [
+   [
+    "could later rescuer and dinner disaster.",
+    "could rescue any dinner disaster."
+   ],
+   [
+    "it's already one.",
+    "it's already won."
+   ],
+   [
+    "the melter, the better without it,",
+    "the meltier, the better, without it"
+   ],
+   [
+    "Chill paper",
+    "Chili pepper"
+   ],
+   [
+    "salt and paper",
+    "salt and pepper"
+   ],
+   [
+    "salt, paper",
+    "salt, pepper"
+   ],
+   [
+    "you're made.",
+    "you've made."
+   ],
+   [
+    "is set without",
+    "is sad without"
+   ],
+   [
+    "I wait.",
+    "I'll wait."
+   ],
+   [
+    "if they're sick,",
+    "if they're thick,"
+   ],
+   [
+    "it all weddings?",
+    "it at weddings?"
+   ],
+   [
+    "resolution.",
+    "resolutions."
+   ],
+   [
+    "said potato mash,",
+    "sad potato mash,"
+   ],
+   [
+    "Take the chill",
+    "Take the chili"
+   ],
+   [
+    "Bye!",
+    "Bye!"
+   ]
+  ],
+  "B": [
+   [
+    "painting buff",
+    "painting both"
+   ],
+   [
+    "the clean spoons.",
+    "than clean spoons."
+   ],
+   [
+    "Chanel-ing",
+    "channeling"
+   ],
+   [
+    "canned chaff in tuscan",
+    "canned, chefs in Tuscany"
+   ],
+   [
+    "and liquor.",
+    "and liqueur."
+   ],
+   [
+    "8 degrees,",
+    "80 degrees,"
+   ],
+   [
+    "drinks like they were called",
+    "drinks like this were called"
+   ],
+   [
+    "Renauer,",
+    "Renoir,"
+   ],
+   [
+    "a partner Frida Kahlo",
+    "apparently Frida Kahlo"
+   ],
+   [
+    "If it tastes to serve and honey,",
+    "If it tastes too sour, add honey,"
+   ]
+  ]
+ }
+}

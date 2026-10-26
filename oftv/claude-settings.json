@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(.venv/Scripts/python.exe:*)",
+      "Bash(ffmpeg:*)",
+      "Bash(ffprobe:*)",
+      "Bash(npx remotion:*)",
+      "Bash(npx.cmd remotion:*)",
+      "Bash(ls:*)",
+      "Bash(git status:*)",
+      "Bash(git pull:*)",
+      "Bash(git log:*)",
+      "PowerShell(.venv\\Scripts\\python.exe:*)",
+      "PowerShell(ffmpeg:*)",
+      "PowerShell(ffprobe:*)",
+      "PowerShell(Get-PSDrive:*)",
+      "Read(~/Downloads/**)",
+      "Edit(projects/**)",
+      "Write(projects/**)",
+      "Edit(oftv/PLAYBOOK.md)"
+    ],
+    "additionalDirectories": ["~/Downloads"]
+  }
+}

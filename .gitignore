@@ -36,7 +36,9 @@ corpus/
 **/corpus/
 
 # User music library (personal royalty-free tracks — not part of repo)
-music_library/
+music_library/*
+# OFTV kit: the CC0 lofi pool ships with the team repo (auto-installed)
+!music_library/lofi/
 
 # Environment & credentials
 .env

@@ -1,0 +1,34 @@
+"""Energy-based speech bounds for every clip -> assets/analysis/speech_bounds.json."""
+import json, subprocess
+from pathlib import Path
+import numpy as np
+
+SRC = [d for d in Path(r"C:\Users\fosfe\Downloads").iterdir() if d.name.startswith("OFTV outfit")][0]
+OUT = Path(__file__).resolve().parents[1] / "assets" / "analysis"
+
+
+def pcm(p, sr=16000):
+    raw = subprocess.run(["ffmpeg", "-v", "error", "-i", str(p), "-map", "0:a:0", "-ac", "1",
+                          "-ar", str(sr), "-f", "s16le", "-"], capture_output=True, check=True).stdout
+    return np.frombuffer(raw, np.int16).astype(np.float32) / 32768.0, sr
+
+
+bounds = {}
+for c in sorted(SRC.glob("*.MOV")):
+    try:
+        x, sr = pcm(c)
+    except subprocess.CalledProcessError:
+        bounds[c.stem] = {"dur": 0, "speech_in": 0, "speech_out": 0, "no_audio": True}
+        continue
+    hop = int(sr * 0.02)
+    n = len(x) // hop
+    db = 20 * np.log10(np.sqrt((x[: n * hop].reshape(n, hop) ** 2).mean(1)) + 1e-9)
+    floor, p90 = np.percentile(db, 10), np.percentile(db, 90)
+    thr = floor + 0.45 * (p90 - floor)
+    idx = np.where(db > thr)[0]
+    bounds[c.stem] = {"dur": round(len(x) / sr, 3),
+                      "speech_in": round(idx[0] * 0.02, 2) if len(idx) else 0.0,
+                      "speech_out": round((idx[-1] + 1) * 0.02, 2) if len(idx) else 0.0,
+                      "floor": round(float(floor), 1), "p90": round(float(p90), 1)}
+(OUT / "speech_bounds.json").write_text(json.dumps(bounds, indent=1), encoding="utf-8")
+print("bounds done", len(bounds))
