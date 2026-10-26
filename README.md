@@ -1,3 +1,5 @@
+> **OFTV team kit — installing for an editor?** Follow [SETUP.md](SETUP.md) (AI assistants: do exactly that). Editors' guide: [oftv/README.md](oftv/README.md).
+
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/monty-dark.svg">
