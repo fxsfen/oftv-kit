@@ -2,17 +2,20 @@
 
 ## Один раз: установка (~30 мин, почти всё делает Claude)
 
-1. Зарегистрируйся на github.com и прими приглашение в репозиторий `fxsfen/oftv-kit` (придёт на почту).
-2. Установи **Claude Desktop** (claude.ai/download) и войди в аккаунт (лучше тариф Max).
-3. В Claude открой вкладку **Code**, выбери любую папку (например «Документы») и вставь это сообщение:
+GitHub-аккаунт не нужен: старший монтажёр пришлёт **ссылку-ключ** вида
+`https://<ключ>@github.com/fxsfen/oftv-kit.git` (только скачивание, никому её не пересылай).
 
-   > Установи GitHub CLI через winget и залогинь меня (`gh auth login --web`, код я введу сам).
-   > Потом склонируй https://github.com/fxsfen/oftv-kit.git в папку OpenMontage в моей домашней папке,
-   > запусти там `powershell -ExecutionPolicy Bypass -File oftv/install.ps1` и в конце `oftv/tools/doctor.py`.
-   > Скопируй `oftv/claude-settings.json` в `.claude/settings.json`, если его нет. Отвечай по-русски.
+1. Установи **Claude Desktop** (claude.ai/download) и войди в аккаунт (лучше тариф Max).
+2. В Claude открой вкладку **Code**, выбери любую папку (например «Документы») и вставь это сообщение,
+   подставив свою ссылку:
 
-   Когда Claude покажет код — открой ссылку, вставь код, нажми Authorize. Остальное он сделает сам (~30 мин).
-4. Когда напишет «READY», открой в Claude папку `OpenMontage` — дальше работай только в ней.
+   > Установи OFTV-kit. Если нет git — поставь через winget (Git.Git). Склонируй <ССЫЛКА> в папку OpenMontage
+   > в моей домашней папке, запусти там `powershell -ExecutionPolicy Bypass -File oftv/install.ps1`,
+   > потом `oftv/tools/doctor.py`. Скопируй `oftv/claude-settings.json` в `.claude/settings.json`, если его нет.
+   > Отвечай по-русски.
+
+   Дальше Claude сделает всё сам (~30 мин), иногда Windows попросит нажать «Да».
+3. Когда напишет «READY», открой в Claude папку `OpenMontage` — дальше работай только в ней.
    Если что-то сломалось — напиши там **`/ustanovka`**, он проверит и починит.
 
 Компьютер: Windows 10/11, 16 ГБ ОЗУ (лучше 32), 50+ ГБ свободно на диске C:, интернет.
